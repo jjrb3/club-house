@@ -17,6 +17,9 @@ class CreateIcons extends Migration
             $table->increments('id');
             $table->string('name', 100)->unique();
         });
+
+        $clase = new icons();
+        $clase->run();
     }
 
     /**
