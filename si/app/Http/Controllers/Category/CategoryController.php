@@ -38,4 +38,18 @@ class CategoryController extends Controller
             'icons' => $iconEloquentRepository->getAll()
         ]);
     }
+
+    /**
+     * Show the application create category.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function create(Request $request, CategoryRepository $categoryRepository)
+    {
+        $category = $categoryRepository->create($request->all());
+
+        return view('category.results', [
+            'category' => $category
+        ]);
+    }
 }

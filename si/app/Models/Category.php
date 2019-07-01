@@ -9,4 +9,14 @@ class Category extends Model
     public $timestamps = false;
 
     protected $table = "categories_product";
+
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'description', 'icon_id',
+    ];
 }

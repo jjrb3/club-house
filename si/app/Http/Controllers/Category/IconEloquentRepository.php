@@ -9,6 +9,8 @@ use App\Models\icon;
 class IconEloquentRepository
 {
     /**
+     * Get all icons
+     *
      * @return object|null
      */
     public function getAll(): object

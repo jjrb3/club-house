@@ -26,3 +26,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Categories
 Route::get('/categories', 'Category\CategoryController@index')->name('category');
 Route::get('/categories/create', 'Category\CategoryController@indexCreate')->name('category.create.index');
+Route::post('/categories/add', 'Category\CategoryController@create')->name('category.create');
