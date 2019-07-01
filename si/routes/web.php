@@ -22,3 +22,7 @@ Route::get('/detail', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Categories
+Route::get('/categories', 'Category\CategoryController@index')->name('category');
+Route::get('/categories/create', 'Category\CategoryController@indexCreate')->name('category.create.index');
