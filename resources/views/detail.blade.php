@@ -6,16 +6,16 @@
     <meta name="author" content="Stids S.A.S">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Club House</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="js/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-    <link rel="stylesheet" type="text/css" href="js/fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.5" media="screen" />
-    <link rel="icon" type="image/png" href="images/logotipo-min.png">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('js/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('js/fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.5" media="screen') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('images/logotipo-min.png') }}">
     <style>
         @font-face {
             font-family: "Capture It";
@@ -31,14 +31,14 @@
 </head>
 
 <body>
-<audio autoplay src="audio.mp4"></audio>
+<audio autoplay src="{{ asset('audio.mp4') }}"></audio>
 <!-- header section -->
 <section class="banner" role="banner">
     <!--header navigation -->
     <header id="header">
         <div class="header-content clearfix">
-            <a style="color: white;" class="logo" href="index.html">
-                <img style="margin: 0 auto;" src="images/logotipo-min.png" width="30px"> CLUB HOUSE
+            <a style="color: white;" class="logo" href="{!! route('home') !!}">
+                <img style="margin: 0 auto;" src="{{ asset('images/logotipo-min.png') }}" width="30px"> CLUB HOUSE
             </a>
             <nav class="navigation" role="navigation">
                 <ul class="primary-nav">
@@ -58,12 +58,12 @@
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
             <div class="banner-text text-center">
-                <img style="margin: 0 auto;" class="img-responsive" src="images/logotipo-min.png" width="290">
+                <img style="margin: 0 auto;" class="img-responsive" src="{{ asset('images/logotipo-min.png') }}" width="290">
                 <h1>Food</h1>
                 <p style="color: white;">Una experiencia inolvidable</p>
                 <nav role="navigation">
                     <a href="#services" class="banner-btn">
-                        <img src="images/down-arrow.png" alt=""></a>
+                        <img src="{{ asset('images/down-arrow.png') }}" alt=""></a>
                 </nav>
             </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="row no-gutter">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="avatar"><img src="images/intro-img1.jpg" alt="" class="img-responsive"></div>
+                    <div class="avatar"><img src="{{ asset('images/intro-img1.jpg') }}" alt="" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6" style="padding: 30px;">
                     <br>
@@ -1337,14 +1337,14 @@
 </footer>
 <!-- Footer section -->
 <!-- JS FILES -->
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript" src="js/fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<script type="text/javascript" src="js/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="{{ asset('js/jquery-1.11.3.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
+<script src="{{ asset('js/retina.min.js') }}"></script>
+<script src="{{ asset('js/modernizr.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.5') }}"></script>
+<script type="text/javascript" src="{{ asset('js/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7') }}"></script>
 <script type="text/javascript">
     $(document).ready(function() {
 
