@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-})->name('home');
+})->name('home.index');
 
 Route::get('/detail', function () {
     return view('detail');

@@ -37,7 +37,7 @@
     <!--header navigation -->
     <header id="header">
         <div class="header-content clearfix">
-            <a style="color: white;" class="logo" href="{!! route('home') !!}">
+            <a style="color: white;" class="logo" href="{!! route('home.index') !!}">
                 <img style="margin: 0 auto;" src="{{ asset('images/logotipo-min.png') }}" width="30px"> CLUB HOUSE
             </a>
             <nav class="navigation" role="navigation">
