@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[design]: Change home route.">
-      <change afterPath="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/si/resources/views/category/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/si/resources/views/category/index.blade.php" afterDir="false" />
+    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[design]: View category.">
+      <change afterPath="$PROJECT_DIR$/si/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/si/app/Models/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/si/app/Models/icon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/si/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -129,7 +126,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="club_house: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="categories_product: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="products: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -148,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="435">
               <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="e#49#77#0#PHP" expanded="true" />
@@ -157,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -169,17 +166,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="675">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/si/resources/views/category/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="435">
+              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -245,6 +242,9 @@
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/create.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/index.blade.php" />
+        <option value="$PROJECT_DIR$/si/app/Models/icon.php" />
+        <option value="$PROJECT_DIR$/si/app/Models/Category.php" />
+        <option value="$PROJECT_DIR$/si/app/Models/Product.php" />
       </list>
     </option>
   </component>
@@ -330,7 +330,7 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -342,7 +342,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -389,6 +388,13 @@
               <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="club-house" type="462c0819:PsiDirectoryNode" />
               <item name="si" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="club-house" type="462c0819:PsiDirectoryNode" />
+              <item name="si" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -418,12 +424,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
@@ -470,6 +477,8 @@
       <workItem from="1552233500067" duration="2231000" />
       <workItem from="1552243804027" duration="2061000" />
       <workItem from="1561987855755" duration="4271000" />
+      <workItem from="1562001621002" duration="69000" />
+      <workItem from="1562017556957" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: Added migrations.">
       <created>1552229897409</created>
@@ -541,17 +550,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561996852116</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[design]: View category.">
+      <created>1562001481102</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562001481102</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16052000" />
+    <option name="totallyTimeSpent" value="16917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22603719" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23175965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -572,7 +588,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.19241774" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19241774" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22603719" />
@@ -655,10 +671,10 @@
     <MESSAGE value="[desigh]: Change language english to spanish." />
     <MESSAGE value="[config]: Change project struct." />
     <MESSAGE value="[design]: Change home route." />
-    <option name="LAST_COMMIT_MESSAGE" value="[design]: Change home route." />
+    <MESSAGE value="[design]: View category." />
+    <option name="LAST_COMMIT_MESSAGE" value="[design]: View category." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/si/.gitignore" />
     <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/migrations">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -666,7 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/database/migrations/2014_10_12_000000_create_users_table.php" />
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
     <entry file="uml://DATABASE/2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef.TABLE:club_house.categories_product">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -694,10 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142519_create_categories_product.php" />
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142542_create_products.php" />
-    <entry file="file://$PROJECT_DIR$/si/database/seeds/icons.php" />
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142408_create_icons.php" />
-    <entry file="file://$PROJECT_DIR$/si/.env" />
-    <entry file="file://$PROJECT_DIR$/si/config/app.php" />
     <entry file="file://$PROJECT_DIR$/si/bootstrap/app.php" />
     <entry file="file://$PROJECT_DIR$/si/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -789,15 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/icons">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -814,15 +817,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/logotipo-min.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -861,13 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -882,16 +869,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="270">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="435">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding>
             <element signature="e#49#77#0#PHP" expanded="true" />
@@ -899,17 +886,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="675">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/category/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="435">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0a633e7f-2d7a-4a32-b6a0-65c4d118d8db">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Models/icon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/icons">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0a633e7f-2d7a-4a32-b6a0-65c4d118d8db">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
