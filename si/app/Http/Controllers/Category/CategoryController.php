@@ -32,8 +32,10 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function indexCreate()
+    public function indexCreate(IconEloquentRepository $iconEloquentRepository)
     {
-        return view('category.create');
+        return view('category.create', [
+            'icons' => $iconEloquentRepository->getAll()
+        ]);
     }
 }

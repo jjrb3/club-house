@@ -13,6 +13,8 @@
 
                         Memories
 
+                        {{ dd($icons) }}
+
                     </div>
                 </div>
             </div>
