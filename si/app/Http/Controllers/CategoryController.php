@@ -96,4 +96,20 @@ class CategoryController extends Controller
             'category' => $category
         ]);
     }
+
+    /**
+     * Delete a category
+     *
+     * @param int $id
+     * @return mixed
+     */
+    public function delete(int $id)
+    {
+        $result = $this->categoryRepository->delete($id);
+
+        return view('category.results', [
+            'result' => $result,
+            'delete' => true
+        ]);
+    }
 }

@@ -38,4 +38,13 @@ interface CategoryInterface
      * @return bool|null
      */
     public function update(array $data): ?bool;
+
+
+    /**
+     * Delete data
+     *
+     * @param int $id
+     * @return bool|null
+     */
+    public function delete(int $id): ?bool;
 }

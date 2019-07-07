@@ -50,11 +50,13 @@
                                             Editar
                                         </button>
                                     </a>
-                                    <a>
-                                        <button class="btn btn-danger">
-                                            Eliminar
-                                        </button>
-                                    </a>
+                                    <button type="button" class="btn btn-danger" onclick="verification();">
+                                        Eliminar
+                                    </button>
+
+                                    <form id="delete-form" method="get"
+                                          action="{{ route('category.delete', ['id' => $category->id]) }}">
+                                    </form>
                                 </td>
                             </tr>
 
@@ -70,5 +72,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function verification() {
+
+            if (confirm('¿Desea eliminar esta categoria? Al hacerlo borrará todos los productos que tiene y no podra recuperar la información.')) {
+                document.getElementById('delete-form').submit();
+            }
+        }
+    </script>
 
 @endsection

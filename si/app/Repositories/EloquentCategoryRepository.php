@@ -80,4 +80,22 @@ class EloquentCategoryRepository implements CategoryInterface
             return null;
         }
     }
+
+    /**
+     * Delete category
+     *
+     * @param array $id
+     * @return bool|null
+     */
+    public function delete(int $id): ?bool
+    {
+        $category = $this->getById($id);
+
+        try {
+            return $category->delete();
+        }
+        catch (\Exception $e) {
+            return null;
+        }
+    }
 }

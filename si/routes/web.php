@@ -30,6 +30,7 @@ Route::get('/categories/create', 'CategoryController@indexCreate')->name('catego
 Route::get('/categories/update/{id}', 'CategoryController@indexUpdate')->name('category.update.index');
 Route::post('/categories/add', 'CategoryController@create')->name('category.create');
 Route::post('/categories/update', 'CategoryController@update')->name('category.update');
+Route::get('/categories/delete/{id}', 'CategoryController@delete')->name('category.delete');
 
 
 // Products

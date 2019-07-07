@@ -15,14 +15,19 @@
     <div class="row">
         <div class="col-md-12">
 
-            @if(!$category)
+            @if(!$result)
                 <div class="alert alert-danger">
                     <strong>Error!</strong> Se presentaron problemas al ejecutar la acción. Para volver a intentarlo
                     presione <a href="{{ url()->previous() }}">AQUI</a>.
                 </div>
-            @else
+            @elseif($result && !$delete)
                 <div class="alert alert-success">
                     <strong>Completado!</strong> Se guardaron los datos correctamente. Para volver a la página anterior
+                    presione <a href="{{ url()->previous() }}">AQUI</a>.
+                </div>
+            @else
+                <div class="alert alert-success">
+                    <strong>Completado!</strong> Se eliminó correctamente. Para volver a la página anterior
                     presione <a href="{{ url()->previous() }}">AQUI</a>.
                 </div>
             @endif
