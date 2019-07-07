@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[design]: Added navbar to admin.">
-      <change afterPath="$PROJECT_DIR$/si/resources/views/layouts/leftsidebar.blade.php" afterDir="false" />
+    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[design]: Added style to categories.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/category/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/si/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/si/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/category/create.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -154,43 +148,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php">
+        <entry file="file://$PROJECT_DIR$/si/resources/views/category/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding>
-                <element signature="e#49#77#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/leftsidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/si/resources/views/category/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="222">
+              <caret line="26" column="91" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -259,15 +229,15 @@
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryRequest.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryRepository.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/results.blade.php" />
-        <option value="$PROJECT_DIR$/si/resources/views/category/create.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/admin.blade.php" />
-        <option value="$PROJECT_DIR$/si/resources/views/si/home.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/nav.blade.php" />
-        <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" />
-        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/leftsidebar.blade.php" />
+        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" />
+        <option value="$PROJECT_DIR$/si/resources/views/si/home.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/index.blade.php" />
+        <option value="$PROJECT_DIR$/si/resources/views/category/create.blade.php" />
       </list>
     </option>
   </component>
@@ -453,14 +423,6 @@
               <item name="si" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="si" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -527,7 +489,7 @@
       <workItem from="1561987855755" duration="4271000" />
       <workItem from="1562001621002" duration="69000" />
       <workItem from="1562017556957" duration="6531000" />
-      <workItem from="1562508402459" duration="4488000" />
+      <workItem from="1562508402459" duration="5934000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: Added migrations.">
       <created>1552229897409</created>
@@ -634,11 +596,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562510470347</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[design]: Dashboard finished.">
+      <created>1562515020030</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562515020030</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[design]: Added style to categories.">
+      <created>1562515873039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562515873039</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27279000" />
+    <option name="totallyTimeSpent" value="28725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -753,7 +729,9 @@
     <MESSAGE value="[feat]: Added Icon eloquent." />
     <MESSAGE value="[feat]: Create category." />
     <MESSAGE value="[design]: Added navbar to admin." />
-    <option name="LAST_COMMIT_MESSAGE" value="[design]: Added navbar to admin." />
+    <MESSAGE value="[design]: Dashboard finished." />
+    <MESSAGE value="[design]: Added style to categories." />
+    <option name="LAST_COMMIT_MESSAGE" value="[design]: Added style to categories." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
@@ -994,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1025,13 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="78" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -1049,27 +1013,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/si/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        <state relative-caret-position="255">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#49#77#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="e#49#77#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1083,10 +1040,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="78" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/si/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/category/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="240">
+          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/category/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="26" column="91" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
         </state>
       </provider>
     </entry>

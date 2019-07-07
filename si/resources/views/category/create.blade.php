@@ -1,57 +1,61 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        Agregar nueva categoría
+
+    <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title">Categorias de productos</h4></div>
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="{{ route('category') }}">Categorias</a></li>
+                <li class="active">Agregar</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="white-box">
+                <h3 class="box-title">Agregar nueva categoria</h3>
+
+                Recuerde llenar todos los campos obligatorios <span class="text-danger">(*)</span>.
+                <br>
+                <br>
+                <form action="{{ route('category.create') }}" method="post">
+
+                    @csrf
+
+                    <div class="form-group">
+                        <label for="email">Nombre. <span class="text-danger">(*)</span></label>
+                        <input type="text" class="form-control" name="name" required>
                     </div>
-
-                    <div class="card-body">
-
-                        <form action="{{ route('category.create') }}" method="post">
-
-                            @csrf
-
-                            <div class="form-group">
-                                <label for="email">Nombre:</label>
-                                <input type="text" class="form-control" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Descripción:</label>
-                                <input type="text" class="form-control" name="description">
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Icono:</label>
-                                <select class="form-control" name="icon_id">
-
-                                    @foreach($icons as $icon)
-
-                                        <option value="{{ $icon->id }}">
-
-                                            @if($icon->name === 'fa-beer')
-                                                Bebidas
-                                            @else
-                                                Comida
-                                            @endif
-
-                                        </option>
-
-                                    @endforeach
-
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Agregar</button>
-                        </form>
-                        <a href="{{ route('category') }}">
-                            <button type="submit" class="btn btn-default">Volver</button>
-                        </a>
-
+                    <div class="form-group">
+                        <label for="pwd">Descripción.</label>
+                        <input type="text" class="form-control" name="description">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="pwd">Icono. <span class="text-danger">(*)</span></label>
+                        <select class="form-control" name="icon_id">
+
+                            @foreach($icons as $icon)
+
+                                <option value="{{ $icon->id }}">
+
+                                    @if($icon->name === 'fa-beer')
+                                        Bebidas
+                                    @else
+                                        Comida
+                                    @endif
+
+                                </option>
+
+                            @endforeach
+
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
             </div>
         </div>
     </div>
+
 @endsection
