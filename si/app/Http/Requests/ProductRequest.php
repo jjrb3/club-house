@@ -26,7 +26,6 @@ class ProductRequest extends FormRequest
         return [
             'name.required' => 'El nombre es requerido.',
             'name.string'   => 'El nombre debe ser una cadena.',
-            'name.unique'   => 'El nombre :input ya esta agregado.',
 
             'price.requied' => 'El precio es requerido.',
             'price.integer' => 'El precio digitado :input debe ser entero.',
@@ -44,7 +43,7 @@ class ProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|unique:products',
+            'name' => 'required|string',
             'price' => 'required|integer',
             'category_product_id' => 'required|integer'
         ];

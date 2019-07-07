@@ -69,7 +69,6 @@ class EloquentProductRepository implements ProductInterface
             return Product::create($data);
         }
         catch (\Exception $e) {
-            dd($e->getMessage());
             return null;
         }
     }
@@ -84,14 +83,19 @@ class EloquentProductRepository implements ProductInterface
     {
         $product = $this->getById($data['id']);
 
-        $product->name         = $data['name'];
-        $product->description  = $data['description'];
-        $product->icon_id      = $data['icon_id'];
+        $product->name                  = $data['name'];
+        $product->description           = $data['description'];
+        $product->price                 = $data['price'];
+        $product->big_size              = isset($data['big_size']) ? $data['big_size'] : 0;
+        $product->medium_size           = isset($data['medium_size']) ? $data['medium_size'] : 0;
+        $product->small_size            = isset($data['small_size']) ? $data['small_size'] : 0;
+        $product->category_product_id   = (int) $data['category_product_id'];
 
         try {
             return $product->save();
         }
         catch (\Exception $e) {
+            dd($e->getMessage());
             return null;
         }
     }

@@ -40,8 +40,10 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
+        $unique = !$this->id ? '|unique:categories_product' : '';
+
         return [
-            'name' => 'required|string|unique:categories_product',
+            'name' => "required|string{$unique}",
             'icon_id' => 'required|integer'
         ];
     }

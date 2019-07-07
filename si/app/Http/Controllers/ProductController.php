@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CategoryRequest;
 use App\Http\Requests\ProductRequest;
-use App\Repositories\Contracts\CategoryInterface;
-use App\Repositories\Contracts\IconInterface;
 use App\Repositories\Contracts\ProductInterface;
-use http\Client\Request;
+
 
 class ProductController extends Controller
 {
@@ -38,7 +36,22 @@ class ProductController extends Controller
     }
 
     /**
-     * Create a new category
+     * Show the application update product.
+     *
+     * @param int $categoryId
+     * @param int $productId
+     * @return mixed
+     */
+    public function indexUpdate(int $categoryId, int $productId)
+    {
+        return view('category.product.update', [
+            'category_id' => $categoryId,
+            'product' => $this->productRepository->getById($productId)
+        ]);
+    }
+
+    /**
+     * Create a new product
      *
      * @param CategoryRequest $request
      * @return mixed
@@ -46,6 +59,21 @@ class ProductController extends Controller
     public function create(ProductRequest $request)
     {
         $result = $this->productRepository->create($request->all());
+
+        return view('category.product.results', [
+            'result' => $result
+        ]);
+    }
+
+    /**
+     * Update a product
+     *
+     * @param ProductRequest $request
+     * @return mixed
+     */
+    public function update(ProductRequest $request)
+    {
+        $result = $this->productRepository->update($request->all());
 
         return view('category.product.results', [
             'result' => $result
