@@ -1,13 +1,20 @@
 <?php
 
 
-namespace App\Http\Controllers\Category;
+namespace App\Repositories;
 
 
 use App\Models\Category;
+use App\Repositories\Contracts\CategoryInterface;
 
-class CategoryRepository
+class EloquentCategoryRepository implements CategoryInterface
 {
+
+    public function all(): ?object
+    {
+        // TODO: Implement all() method.
+    }
+
     /**
      * Create category
      *

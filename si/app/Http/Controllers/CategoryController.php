@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Category;
+namespace App\Http\Controllers;
 
+
+use App\Repositories\Contracts\CategoryInterface;
+use App\Repositories\Contracts\IconInterface;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
@@ -32,10 +34,10 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function indexCreate(IconEloquentRepository $iconEloquentRepository)
+    public function indexCreate(IconInterface $icon)
     {
         return view('category.create', [
-            'icons' => $iconEloquentRepository->getAll()
+            'icons' => $icon->all()
         ]);
     }
 
