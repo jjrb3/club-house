@@ -59,6 +59,17 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Actualizar</button>
                     </form>
+                    <br>
+                    <br>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 @else
                     <div class="alert alert-warning">
                         <strong>Alerta!</strong> No se encontraron datos para esta categoria. Para volver a la página

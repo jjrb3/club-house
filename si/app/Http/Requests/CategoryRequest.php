@@ -17,6 +17,23 @@ class CategoryRequest extends FormRequest
     }
 
     /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'name.required' => 'El nombre es requerido.',
+            'name.string'   => 'El nombre debe ser una cadena.',
+            'name.unique'   => 'El nombre :input ya esta agregado.',
+
+            'icon_id.required'  => 'El ID del icono es requerida',
+            'icon_id.integer'   => 'El id del icono :input debe ser entero.',
+        ];
+    }
+
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array
@@ -24,8 +41,8 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:categories_product',
-            'icon_id' => 'required'
+            'name' => 'required|string|unique:categories_product',
+            'icon_id' => 'required|integer'
         ];
     }
 }

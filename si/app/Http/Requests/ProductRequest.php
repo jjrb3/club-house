@@ -31,7 +31,7 @@ class ProductRequest extends FormRequest
             'price.requied' => 'El precio es requerido.',
             'price.integer' => 'El precio digitado :input debe ser entero.',
 
-            'category_product_id.required'  => 'La categoria del producto es requerida',
+            'category_product_id.required'  => 'El ID de la categoria del producto es requerida',
             'category_product_id.integer'   => 'El id de la categoria :input debe ser entero.',
         ];
     }
