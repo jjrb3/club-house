@@ -6,23 +6,26 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CategoryRequest;
 use App\Repositories\Contracts\CategoryInterface;
 use App\Repositories\Contracts\IconInterface;
+use App\Repositories\Contracts\ProductInterface;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
     protected $iconRepository;
     protected $categoryRepository;
+    protected $productRepository;
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(IconInterface $icon, CategoryInterface $category)
+    public function __construct(IconInterface $icon, CategoryInterface $category, ProductInterface $product)
     {
         $this->middleware('auth');
         $this->iconRepository     = $icon;
         $this->categoryRepository = $category;
+        $this->productRepository  = $product;
     }
 
     /**
@@ -47,7 +50,8 @@ class CategoryController extends Controller
     {
         return view('category.update', [
             'icons' => $this->iconRepository->all(),
-            'category' => $this->categoryRepository->getById($id)
+            'category' => $this->categoryRepository->getById($id),
+            'products' => $this->productRepository->allByCategory($id)
         ]);
     }
 

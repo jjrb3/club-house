@@ -1170,6 +1170,7 @@ name</ColNames>
       <RefSchemaName>club_house</RefSchemaName>
       <RefTableName>categories_product</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="285" parent="235" name="id">
       <Position>1</Position>

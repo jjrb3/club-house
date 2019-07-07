@@ -65,6 +65,90 @@
                         anterior presione <a href="{{ url()->previous() }}">AQUI</a>.
                     </div>
                 @endif
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="white-box">
+                <h3 class="box-title">Listado de productos</h3>
+                Para agregar un nuevo producto presione <a href="{{ route('product.create.index') }}">AQUÍ</a>.
+                <br>
+                <br>
+
+                @if($products->count())
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Pequeño</th>
+                            <th scope="col">Mediano</th>
+                            <th scope="col">Grande</th>
+                            <th scope="col">Opciones</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach($products as $product)
+
+                                <tr>
+                                    <td>{{ $product->name }}</td>
+                                    <td>{{ $product->description }}</td>
+                                    <td>${{ number_format($product->price) }}</td>
+                                    <td>
+                                        <input type="checkbox" class="fa-2x" disabled
+                                               @if($product->big_size) checked @endif
+                                        >
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="fa-2x" disabled
+                                               @if($product->medium_size) checked @endif
+                                        >
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="fa-2x" disabled
+                                               @if($product->small_size) checked @endif
+                                        >
+                                    </td>
+                                    <td width="20%">
+                                        <a>
+                                            <button class="btn btn-default"
+                                                    onclick="location.assign('{{
+                                                route('product.update.index', [
+                                                    'id' => $product->id
+                                                ])
+                                                }}')">
+                                                Editar
+                                            </button>
+                                        </a>
+                                        <a>
+                                            <button class="btn btn-danger">
+                                                Eliminar
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            @endforeach
+
+                        </tbody>
+                    </table>
+
+                    {{ $products->links() }}
+
+                @else
+
+                    <div class="alert alert-warning">
+                        <strong>Alerta!</strong> No se encontraron productos para esta categoria.
+                    </div>
+
+                @endif
+
             </div>
         </div>
     </div>
