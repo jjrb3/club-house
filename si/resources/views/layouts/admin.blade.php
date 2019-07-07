@@ -20,8 +20,17 @@
     <div id="wrapper">
 
         @include('layouts.nav')
+        @include('layouts.leftsidebar')
 
-        @yield('content')
+        <div id="page-wrapper">
+            <div class="container-fluid">
+
+                @yield('content')
+
+                <div class="row" id="product-list">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
