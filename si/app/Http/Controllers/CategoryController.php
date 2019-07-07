@@ -10,39 +10,55 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    protected $iconRepository;
+    protected $categoryRepository;
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(IconInterface $icon, CategoryInterface $category)
     {
         $this->middleware('auth');
+        $this->iconRepository     = $icon;
+        $this->categoryRepository = $category;
     }
 
     /**
      * Show the application category.
      *
-     * @param CategoryInterface $category
      * @return mixed
      */
-    public function index(CategoryInterface $category)
+    public function index()
     {
         return view('category.index', [
-            'categories' => $category->all()
+            'categories' => $this->categoryRepository->all()
+        ]);
+    }
+
+    /**
+     * Show the application update category.
+     *
+     * @return mixed
+     */
+    public function indexUpdate()
+    {
+        return view('category.update', [
+            'icons' => $this->iconRepository->all(),
+            ''
         ]);
     }
 
     /**
      * Show the application create category.
      *
-     * @param IconInterface $icon
      * @return mixed
      */
-    public function indexCreate(IconInterface $icon)
+    public function indexCreate()
     {
         return view('category.create', [
-            'icons' => $icon->all()
+            'icons' => $this->iconRepository->all()
         ]);
     }
 
@@ -50,12 +66,11 @@ class CategoryController extends Controller
      * Create a new category
      *
      * @param CategoryRequest $request
-     * @param CategoryInterface $category
      * @return mixed
      */
-    public function create(CategoryRequest $request, CategoryInterface $category)
+    public function create(CategoryRequest $request)
     {
-        $category = $category->create($request->all());
+        $category = $this->categoryRepository->create($request->all());
 
         return view('category.results', [
             'category' => $category
