@@ -23,7 +23,8 @@ class CategoryController extends Controller
     /**
      * Show the application category.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @param CategoryInterface $category
+     * @return mixed
      */
     public function index(CategoryInterface $category)
     {
@@ -35,7 +36,8 @@ class CategoryController extends Controller
     /**
      * Show the application create category.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @param IconInterface $icon
+     * @return mixed
      */
     public function indexCreate(IconInterface $icon)
     {
@@ -45,9 +47,11 @@ class CategoryController extends Controller
     }
 
     /**
-     * Show the application create category.
+     * Create a new category
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @param CategoryRequest $request
+     * @param CategoryInterface $category
+     * @return mixed
      */
     public function create(CategoryRequest $request, CategoryInterface $category)
     {
