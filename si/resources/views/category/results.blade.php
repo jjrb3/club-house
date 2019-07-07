@@ -22,7 +22,7 @@
                 </div>
             @else
                 <div class="alert alert-success">
-                    <strong>Completado!</strong> Se guardaron los datos correctamenet. Para volver a la pagina anterior
+                    <strong>Completado!</strong> Se guardaron los datos correctamente. Para volver a la página anterior
                     presione <a href="{{ url()->previous() }}">AQUI</a>.
                 </div>
             @endif

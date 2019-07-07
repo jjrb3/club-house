@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Http\Requests\CategoryRequest;
 use App\Repositories\Contracts\CategoryInterface;
 use App\Repositories\Contracts\IconInterface;
 use Illuminate\Http\Request;
@@ -46,9 +47,9 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function create(Request $request, CategoryRepository $categoryRepository)
+    public function create(CategoryRequest $request, CategoryInterface $category)
     {
-        $category = $categoryRepository->create($request->all());
+        $category = $category->create($request->all());
 
         return view('category.results', [
             'category' => $category
