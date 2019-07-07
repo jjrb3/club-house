@@ -79,4 +79,20 @@ class ProductController extends Controller
             'result' => $result
         ]);
     }
+
+    /**
+     * Delete a product
+     *
+     * @param int $id
+     * @return mixed
+     */
+    public function delete(int $id)
+    {
+        $result = $this->productRepository->delete($id);
+
+        return view('category.product.results', [
+            'result' => $result,
+            'delete' => true
+        ]);
+    }
 }

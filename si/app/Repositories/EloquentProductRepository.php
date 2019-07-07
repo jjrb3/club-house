@@ -95,7 +95,24 @@ class EloquentProductRepository implements ProductInterface
             return $product->save();
         }
         catch (\Exception $e) {
-            dd($e->getMessage());
+            return null;
+        }
+    }
+
+    /**
+     * Delete product
+     *
+     * @param array $id
+     * @return bool|null
+     */
+    public function delete(int $id): ?bool
+    {
+        $product = $this->getById($id);
+
+        try {
+            return $product->delete();
+        }
+        catch (\Exception $e) {
             return null;
         }
     }

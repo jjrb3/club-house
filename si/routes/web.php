@@ -37,3 +37,4 @@ Route::get('/products/create/{categoryId}', 'ProductController@indexCreate')->na
 Route::get('/product/update/{categoryId}/{productId}', 'ProductController@indexUpdate')->name('product.update.index');
 Route::post('/product/create', 'ProductController@create')->name('product.create');
 Route::post('/product/update', 'ProductController@update')->name('product.update');
+Route::get('/product/delete/{id}', 'ProductController@delete')->name('product.delete');

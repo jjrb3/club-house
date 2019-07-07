@@ -140,11 +140,14 @@
                                                 Editar
                                             </button>
                                         </a>
-                                        <a>
-                                            <button class="btn btn-danger">
-                                                Eliminar
-                                            </button>
-                                        </a>
+                                        <button type="button" class="btn btn-danger" onclick="verification();">
+                                            Eliminar
+                                        </button>
+
+                                        <form id="delete-form" method="get"
+                                              action="{{ route('product.delete', ['id' => $product->id]) }}">
+                                        </form>
+
                                     </td>
                                 </tr>
 
@@ -166,5 +169,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function verification() {
+
+            if (confirm('¿Desea eliminar este producto? No podra recuperar todos los datos')) {
+                document.getElementById('delete-form').submit();
+            }
+        }
+    </script>
 
 @endsection
