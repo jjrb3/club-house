@@ -20,7 +20,7 @@
                     <strong>Error!</strong> Se presentaron problemas al ejecutar la acción. Para volver a intentarlo
                     presione <a href="{{ url()->previous() }}">AQUI</a>.
                 </div>
-            @elseif($result && !$delete)
+            @elseif($result && !isset($delete))
                 <div class="alert alert-success">
                     <strong>Completado!</strong> Se guardaron los datos correctamente. Para volver a la página anterior
                     presione <a href="{{ url()->previous() }}">AQUI</a>.

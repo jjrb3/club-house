@@ -78,7 +78,8 @@ class CategoryController extends Controller
         $category = $this->categoryRepository->create($request->all());
 
         return view('category.results', [
-            'category' => $category
+            'result' => $category,
+            'delete' => false
         ]);
     }
 
@@ -93,7 +94,8 @@ class CategoryController extends Controller
         $category = $this->categoryRepository->update($request->all());
 
         return view('category.results', [
-            'category' => $category
+            'result' => $category,
+            'delete' => false
         ]);
     }
 

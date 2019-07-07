@@ -20,7 +20,7 @@
                 <br>
                 <br>
 
-                @if($categories)
+                @if($categories->count())
 
                     <table class="table table-striped">
                         <thead>
@@ -50,11 +50,11 @@
                                             Editar
                                         </button>
                                     </a>
-                                    <button type="button" class="btn btn-danger" onclick="verification();">
+                                    <button type="button" class="btn btn-danger" onclick="verification({{ $category->id }});">
                                         Eliminar
                                     </button>
 
-                                    <form id="delete-form" method="get"
+                                    <form id="delete-form-{{ $category->id }}" method="get"
                                           action="{{ route('category.delete', ['id' => $category->id]) }}">
                                     </form>
                                 </td>
@@ -67,6 +67,12 @@
                     </table>
 
                     {{ $categories->links() }}
+                @else
+
+                    <div class="alert alert-warning">
+                        <strong>Alerta!</strong> No se encontraron categorias.
+                    </div>
+
                 @endif
 
             </div>
@@ -74,10 +80,10 @@
     </div>
 
     <script>
-        function verification() {
+        function verification(id) {
 
             if (confirm('¿Desea eliminar esta categoria? Al hacerlo borrará todos los productos que tiene y no podra recuperar la información.')) {
-                document.getElementById('delete-form').submit();
+                document.getElementById('delete-form-' + id).submit();
             }
         }
     </script>

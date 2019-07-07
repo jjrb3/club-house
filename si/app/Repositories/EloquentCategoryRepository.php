@@ -89,6 +89,7 @@ class EloquentCategoryRepository implements CategoryInterface
      */
     public function delete(int $id): ?bool
     {
+        dd($id);
         $category = $this->getById($id);
 
         try {
