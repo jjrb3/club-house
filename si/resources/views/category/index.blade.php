@@ -42,7 +42,11 @@
                                 <td width="20%">
                                     <a>
                                         <button class="btn btn-default"
-                                                onclick="location.assign('{{ route('category.update.index') }}')">
+                                                onclick="location.assign('{{
+                                                route('category.update.index', [
+                                                    'id' => $category->id
+                                                ])
+                                                }}')">
                                             Editar
                                         </button>
                                     </a>

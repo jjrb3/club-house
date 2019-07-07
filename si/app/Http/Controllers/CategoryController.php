@@ -40,13 +40,14 @@ class CategoryController extends Controller
     /**
      * Show the application update category.
      *
+     * @param int $id
      * @return mixed
      */
-    public function indexUpdate()
+    public function indexUpdate(int $id)
     {
         return view('category.update', [
             'icons' => $this->iconRepository->all(),
-            ''
+            'category' => $this->categoryRepository->getById($id)
         ]);
     }
 
@@ -71,6 +72,21 @@ class CategoryController extends Controller
     public function create(CategoryRequest $request)
     {
         $category = $this->categoryRepository->create($request->all());
+
+        return view('category.results', [
+            'category' => $category
+        ]);
+    }
+
+    /**
+     * Update a category
+     *
+     * @param CategoryRequest $request
+     * @return mixed
+     */
+    public function update(CategoryRequest $request)
+    {
+        $category = $this->categoryRepository->update($request->all());
 
         return view('category.results', [
             'category' => $category

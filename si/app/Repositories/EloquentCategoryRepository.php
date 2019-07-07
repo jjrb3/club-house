@@ -30,14 +30,51 @@ class EloquentCategoryRepository implements CategoryInterface
     }
 
     /**
+     * Get by id
+     *
+     * @param int $id
+     * @return object|null
+     */
+    public function getById(int $id): ?object
+    {
+        try {
+            return Category::find($id);
+        }
+        catch (\Exception $e) {
+            return null;
+        }
+    }
+
+    /**
      * Create category
      *
      * @param array $data
      * @return Category
      */
-    public function create(array $data): ?Category {
+    public function create(array $data): ?Category
+    {
         try {
             return Category::create($data);
+        }
+        catch (\Exception $e) {
+            return null;
+        }
+    }
+
+    /**
+     * @param array $data
+     * @return bool|null
+     */
+    public function update(array $data): ?bool
+    {
+        $category = $this->getById($data['id']);
+
+        $category->name         = $data['name'];
+        $category->description  = $data['description'];
+        $category->icon_id      = $data['icon_id'];
+
+        try {
+            return $category->save();
         }
         catch (\Exception $e) {
             return null;

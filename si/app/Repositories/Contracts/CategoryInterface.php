@@ -13,6 +13,15 @@ interface CategoryInterface
      */
     public function all(): ?object;
 
+
+    /**
+     * Get by ID
+     *
+     * @return object|null
+     */
+    public function getById(int $id): ?object;
+
+
     /**
      * Create data
      *
@@ -20,4 +29,13 @@ interface CategoryInterface
      * @return Category|null
      */
     public function create(array $data): ?Category;
+
+
+    /**
+     * Update data
+     *
+     * @param array $data
+     * @return bool|null
+     */
+    public function update(array $data): ?bool;
 }
