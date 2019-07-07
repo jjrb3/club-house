@@ -33,5 +33,6 @@ Route::post('/categories/update', 'CategoryController@update')->name('category.u
 
 
 // Products
-Route::get('/products/create', 'ProductController@indexCreate')->name('product.create.index');
-Route::get('/product/update/{id}', 'CategoryController@indexUpdate')->name('product.update.index');
+Route::get('/products/create/{categoryId}', 'ProductController@indexCreate')->name('product.create.index');
+Route::get('/product/update/{categoryId}/{productId}', 'CategoryController@indexUpdate')->name('product.update.index');
+Route::post('/product/create', 'ProductController@create')->name('product.create');

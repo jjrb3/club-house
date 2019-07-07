@@ -74,7 +74,9 @@
         <div class="col-md-12">
             <div class="white-box">
                 <h3 class="box-title">Listado de productos</h3>
-                Para agregar un nuevo producto presione <a href="{{ route('product.create.index') }}">AQUÍ</a>.
+                Para agregar un nuevo producto presione <a href="{{
+                    route('product.create.index', ['categoryId' => $category->id])
+                }}">AQUÍ</a>.
                 <br>
                 <br>
 
@@ -120,7 +122,8 @@
                                             <button class="btn btn-default"
                                                     onclick="location.assign('{{
                                                 route('product.update.index', [
-                                                    'id' => $product->id
+                                                    'categoryId' => $category->id,
+                                                    'productId' => $product->id
                                                 ])
                                                 }}')">
                                                 Editar

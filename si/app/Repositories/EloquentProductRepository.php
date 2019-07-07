@@ -69,6 +69,7 @@ class EloquentProductRepository implements ProductInterface
             return Product::create($data);
         }
         catch (\Exception $e) {
+            dd($e->getMessage());
             return null;
         }
     }
