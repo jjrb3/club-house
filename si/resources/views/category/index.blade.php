@@ -19,54 +19,50 @@
                 momento de actualizar una categoria podrá ver el listado de productos asociados a esa categoria.
                 <br>
                 <br>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Icono</th>
-                        <th scope="col">Opciones</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>CLUB POTATOES</td>
-                        <td>Papas a la francesa, papas en casco, queso americano, beicon, sour crearm</td>
-                        <td align="center"><i class="fa fa-cutlery" aria-hidden="true"></i></td>
-                        <td>
-                            <a>
-                                <button class="btn btn-default">
-                                    Editar
-                                </button>
-                            </a>
-                            <a>
-                                <button class="btn btn-danger">
-                                    Eliminar
-                                </button>
-                            </a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>CLUB POTATOES</td>
-                        <td>Papas a la francesa, papas en casco, queso americano, beicon, sour crearm</td>
-                        <td align="center"><i class="fa fa-beer" aria-hidden="true"></i></td>
-                        <td>
-                            <a>
-                                <button class="btn btn-default">
-                                    Editar
-                                </button>
-                            </a>
-                            <a>
-                                <button class="btn btn-danger">
-                                    Eliminar
-                                </button>
-                            </a>
+                @if($categories)
 
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Icono</th>
+                            <th scope="col">Opciones</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        @foreach($categories as $category)
+
+                            <tr>
+                                <td>{{ $category->name }}</td>
+                                <td>{{ $category->description }}</td>
+                                <td align="center"><i class="fa {{ $category->icon_code }}" aria-hidden="true"></i></td>
+                                <td width="20%">
+                                    <a>
+                                        <button class="btn btn-default"
+                                                onclick="location.assign('{{ route('') }}')">
+                                            Editar
+                                        </button>
+                                    </a>
+                                    <a>
+                                        <button class="btn btn-danger">
+                                            Eliminar
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        @endforeach
+
+
+                        </tbody>
+                    </table>
+
+                    {{ $categories->links() }}
+                @endif
+
             </div>
         </div>
     </div>

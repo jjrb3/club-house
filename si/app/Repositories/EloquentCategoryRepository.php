@@ -9,10 +9,24 @@ use App\Repositories\Contracts\CategoryInterface;
 
 class EloquentCategoryRepository implements CategoryInterface
 {
-
+    /**
+     * Get all category with icon name
+     *
+     * @return object|null
+     */
     public function all(): ?object
     {
-        // TODO: Implement all() method.
+        try {
+            return Category::select(
+                'categories_product.*',
+                'icons.name AS icon_code'
+            )
+                ->join('icons','categories_product.icon_id','icons.id')
+                ->paginate(5);
+        }
+        catch (\Exception $e) {
+            return null;
+        }
     }
 
     /**

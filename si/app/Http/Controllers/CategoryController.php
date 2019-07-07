@@ -25,9 +25,11 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(CategoryInterface $category)
     {
-        return view('category.index');
+        return view('category.index', [
+            'categories' => $category->all()
+        ]);
     }
 
     /**
