@@ -18,7 +18,8 @@
             <div class="white-box">
                 <h3 class="box-title">Agregar nuevo producto</h3>
 
-                Recuerde llenar todos los campos obligatorios <span class="text-danger">(*)</span>.
+                Recuerde llenar todos los campos obligatorios <span class="text-danger">(*)</span>. Si no quiere colocar
+                precio debe dejar por default 0.
                 <br>
                 <br>
                 <form action="{{ route('product.create') }}" method="post">
@@ -36,17 +37,19 @@
                     </div>
                     <div class="form-group">
                         <label for="pwd">Precio. <span class="text-danger">(*)</span></label>
-                        <input type="text" class="form-control" name="price">
+                        <input type="text" class="form-control" name="price" value="0">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Tamaño. <span class="text-danger">(*)</span></label>
-                        <div>
-                            <input type="checkbox" class="fa-2x" name="big_size"> Grande
-                            &nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" class="fa-2x" name="medium_size"> Mediano
-                            &nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" class="fa-2x" name="small_size"> Pequeño
-                        </div>
+                        <label for="pwd">Tamaño grande. </label>
+                        <input type="text" class="form-control" name="big_size" placeholder="30000">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Tamaño mediano. </label>
+                        <input type="text" class="form-control" name="medium_size" placeholder="30000">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Tamaño pequeño. </label>
+                        <input type="text" class="form-control" name="small_size" placeholder="30000">
                     </div>
                     <button type="submit" class="btn btn-primary">Agregar</button>
                 </form>

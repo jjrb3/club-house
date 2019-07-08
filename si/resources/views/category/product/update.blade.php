@@ -41,7 +41,7 @@
                         <input type="text" class="form-control" value="{{ $product->price }}" name="price">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Tamaño. <span class="text-danger">(*)</span></label>
+                        <label for="pwd">Tamaño.</label>
                         <div>
                             <input type="checkbox" class="fa-2x" name="big_size"
                                     @if($product->big_size) checked @endif

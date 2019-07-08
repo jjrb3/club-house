@@ -1130,21 +1130,21 @@
     </column>
     <column id="278" parent="234" name="big_size">
       <Position>5</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="279" parent="234" name="medium_size">
       <Position>6</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="280" parent="234" name="small_size">
       <Position>7</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>

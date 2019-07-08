@@ -27,7 +27,7 @@ class Product extends Model
      * @param $value
      */
     public function setBigSizeAttribute($value) {
-        $this->attributes['big_size'] = $value === 'on' ? 1 : 0;
+        $this->attributes['big_size'] = !$value ? 0 : $value;
     }
 
 
@@ -37,7 +37,7 @@ class Product extends Model
      * @param $value
      */
     public function setMediumSizeAttribute($value) {
-        $this->attributes['medium_size'] = $value === 'on' ? 1 : 0;
+        $this->attributes['medium_size'] = !$value ? 0 : $value;
     }
 
 
@@ -47,6 +47,6 @@ class Product extends Model
      * @param $value
      */
     public function setSmallSizeAttribute($value) {
-        $this->attributes['small_size'] = $value === 'on' ? 1 : 0;
+        $this->attributes['small_size'] = !$value ? 0 : $value;
     }
 }
