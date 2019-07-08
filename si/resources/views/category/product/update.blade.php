@@ -40,21 +40,18 @@
                         <label for="pwd">Precio. <span class="text-danger">(*)</span></label>
                         <input type="text" class="form-control" value="{{ $product->price }}" name="price">
                     </div>
+
                     <div class="form-group">
-                        <label for="pwd">Tamaño.</label>
-                        <div>
-                            <input type="checkbox" class="fa-2x" name="big_size"
-                                    @if($product->big_size) checked @endif
-                            > Grande
-                            &nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" class="fa-2x" name="medium_size"
-                                   @if($product->medium_size) checked @endif
-                            > Mediano
-                            &nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" class="fa-2x" name="small_size"
-                                   @if($product->small_size) checked @endif
-                            > Pequeño
-                        </div>
+                        <label for="pwd">Tamaño grande. </label>
+                        <input type="text" class="form-control" value="{{ $product->big_size }}" name="big_size">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Tamaño mediano. </label>
+                        <input type="text" class="form-control" value="{{ $product->medium_size }}" name="medium_size">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Tamaño pequeño. </label>
+                        <input type="text" class="form-control" value="{{ $product->small_size }}" name="small_size">
                     </div>
                     <button type="submit" class="btn btn-primary">Actualizar</button>
                 </form>
