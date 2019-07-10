@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[fix]: Change delete by id.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef.xml" afterDir="false" />
+    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[fix]: Change update products.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Repositories/EloquentProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Repositories/EloquentProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/category/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/category/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/category/product/results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/category/product/results.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/category/product/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/category/product/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -124,53 +123,45 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="club_house: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="club_house: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="products: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/CategoryController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+            <state relative-caret-position="442">
+              <caret line="181" column="38" selection-start-line="181" selection-start-column="38" selection-end-line="181" selection-end-column="38" />
               <folding>
-                <element signature="e#41#79#0#PHP" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#section#2;n#body#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#section#2;n#body#0;n#!!top" />
+                <element signature="n#div#5;n#div#0;n#section#2;n#body#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="555">
+              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+              <folding>
+                <element signature="e#40#89#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentProductRepository.php">
+        <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/si/app/Models/Product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+            <state relative-caret-position="583">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <folding>
+                <element signature="e#38#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,6 +179,9 @@
       <find>regist</find>
       <find>index</find>
       <find>APP_NAME</find>
+      <find>mp4</find>
+      <find>(queso mozzarella)</find>
+      <find>Mediana</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;</replace>
@@ -220,7 +214,6 @@
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/si/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/si/resources/views/detail.blade.php" />
         <option value="$PROJECT_DIR$/si/app/Models/icon.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryEloquentRepository.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/IconEloquentRepository.php" />
@@ -230,7 +223,6 @@
         <option value="$PROJECT_DIR$/si/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/nav.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/layouts/leftsidebar.blade.php" />
-        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryController.php" />
         <option value="$PROJECT_DIR$/si/resources/views/si/home.blade.php" />
         <option value="$PROJECT_DIR$/si/app/Models/Icon.php" />
@@ -242,20 +234,22 @@
         <option value="$PROJECT_DIR$/si/app/Http/Requests/CategoryRequest.php" />
         <option value="$PROJECT_DIR$/si/app/Repositories/Contracts/ProductInterface.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/ProductController.php" />
-        <option value="$PROJECT_DIR$/si/routes/web.php" />
-        <option value="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" />
         <option value="$PROJECT_DIR$/si/app/Http/Controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/results.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/update.blade.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/index.blade.php" />
-        <option value="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/product/results.blade.php" />
-        <option value="$PROJECT_DIR$/si/resources/views/category/product/update.blade.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/si/app/Http/Requests/ProductRequest.php" />
         <option value="$PROJECT_DIR$/si/resources/views/category/product/create.blade.php" />
         <option value="$PROJECT_DIR$/si/app/Repositories/EloquentProductRepository.php" />
         <option value="$PROJECT_DIR$/si/app/Models/Product.php" />
+        <option value="$PROJECT_DIR$/si/resources/views/category/product/update.blade.php" />
+        <option value="$PROJECT_DIR$/si/routes/web.php" />
+        <option value="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" />
+        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" />
+        <option value="$PROJECT_DIR$/si/resources/views/detail.blade.php" />
       </list>
     </option>
   </component>
@@ -436,31 +430,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -526,7 +495,7 @@
       <workItem from="1562001621002" duration="69000" />
       <workItem from="1562017556957" duration="6531000" />
       <workItem from="1562508402459" duration="29863000" />
-      <workItem from="1562625743695" duration="763000" />
+      <workItem from="1562625743695" duration="5130000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: Added migrations.">
       <created>1552229897409</created>
@@ -759,17 +728,31 @@
       <option name="project" value="LOCAL" />
       <updated>1562543712623</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="[fix]: Change create products.">
+      <created>1562626607196</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1562626607197</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[fix]: Change update products.">
+      <created>1562626831883</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1562626831883</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53417000" />
+    <option name="totallyTimeSpent" value="57784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23462088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -790,7 +773,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19241774" />
+      <window_info anchor="right" id="Database" order="3" weight="0.19241774" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
@@ -863,8 +846,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[desigh]: Change language english to spanish." />
-    <MESSAGE value="[config]: Change project struct." />
     <MESSAGE value="[design]: Change home route." />
     <MESSAGE value="[design]: View category." />
     <MESSAGE value="[feat]: Added category, incon, product models." />
@@ -888,7 +869,9 @@
     <MESSAGE value="[feat]: Added delete product." />
     <MESSAGE value="[feat]: Added delete category." />
     <MESSAGE value="[fix]: Change delete by id." />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]: Change delete by id." />
+    <MESSAGE value="[fix]: Change create products." />
+    <MESSAGE value="[fix]: Change update products." />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]: Change update products." />
   </component>
   <component name="editorHistoryManager">
     <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/password_resets">
@@ -972,13 +955,6 @@
     <entry file="file://$PROJECT_DIR$/images/logotipo-min.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/config/logging.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-292" />
@@ -1033,13 +1009,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/Category/CategoryRequest.php" />
-    <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Models/Icon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1128,20 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="82" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1173,30 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-          <folding>
-            <element signature="e#38#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="acde1a52-e12f-43e2-9260-efbf91c7825a">
-          <filtering />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Requests/ProductRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -1225,6 +1156,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="acde1a52-e12f-43e2-9260-efbf91c7825a">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -1235,10 +1182,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="450">
+          <caret line="53" column="94" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -1253,6 +1200,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding>
+            <element signature="e#40#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="181" column="38" selection-start-line="181" selection-start-column="38" selection-end-line="181" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#3;n#div#0;n#section#2;n#body#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#section#2;n#body#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#section#2;n#body#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

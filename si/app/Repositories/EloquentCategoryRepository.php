@@ -6,15 +6,27 @@ namespace App\Repositories;
 
 use App\Models\Category;
 use App\Repositories\Contracts\CategoryInterface;
+use App\Repositories\Contracts\ProductInterface;
 
 class EloquentCategoryRepository implements CategoryInterface
 {
+    protected $productRepository;
+
+    /**
+     * EloquentCategoryRepository constructor.
+     * @param ProductInterface $product
+     */
+    public function __construct(ProductInterface $product)
+    {
+        $this->productRepository = $product;
+    }
+
     /**
      * Get all category with icon name
      *
      * @return object|null
      */
-    public function all(): ?object
+    public function all(int $pagination = 5): ?object
     {
         try {
             return Category::select(
@@ -22,11 +34,23 @@ class EloquentCategoryRepository implements CategoryInterface
                 'icons.name AS icon_code'
             )
                 ->join('icons','categories_product.icon_id','icons.id')
-                ->paginate(5);
+                ->paginate($pagination);
         }
         catch (\Exception $e) {
             return null;
         }
+    }
+
+    public function allWithProducts(): ?object
+    {
+        $categories = $this->all(10000);
+
+        foreach ($categories as $key => $category) {
+
+            $categories[$key]->products = $this->productRepository->allByCategory($category->id);
+        }
+
+        return $categories;
     }
 
     /**

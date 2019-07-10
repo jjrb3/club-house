@@ -2,18 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Contracts\CategoryInterface;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    protected $categoryRepository;
+
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(CategoryInterface $categoryRepository)
     {
         $this->middleware('auth');
+        $this->categoryRepository = $categoryRepository;
     }
 
     /**
@@ -24,5 +29,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('si.home');
+    }
+
+
+    public function detail()
+    {
+        return view('detail', [
+            'categories' => $this->categoryRepository->allWithProducts()
+        ]);
     }
 }

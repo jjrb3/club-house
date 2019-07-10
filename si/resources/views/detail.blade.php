@@ -31,7 +31,9 @@
 </head>
 
 <body>
+<!--
 <audio autoplay src="{{ asset('audio.mp4') }}"></audio>
+-->
 <!-- header section -->
 <section class="banner" role="banner">
     <!--header navigation -->
@@ -103,844 +105,943 @@
                 <br>
                 <br>
             </div>
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-cutlery fa-2x rojo"></span>
-                <h4>PIQUES</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Mozzarellas fingers</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$8</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Aros de cebolla</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$7</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Porción papas a la francesa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Porción papas en casco</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$6</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Dedos de pollo</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$6</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-cutlery fa-2x rojo"></span>
-                <h4>SANDWICHS DULCES</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            Queso y miel
-                            <div class="subtexto">(queso mozzarella)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%" valign="top">
-                            <div class="precio-rojo">$8</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Bocadillo con queso</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Nutella, fresas y queso mozzarella</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Troplical
-                            <div class="subtexto">(piña, cereza, queso y jamón)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%" valign="top">
-                            <div class="precio-rojo">$11</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-cutlery fa-2x rojo"></span>
-                <h4>LA GRAN PICADA</h4>
-                <span class="texto-rojo">(Papas a la francesa, papas en casco, aros de cebolla, mozzarellas fingers)</span>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            La gran picada dedos de pollo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$22</div>
-                            <div class="precio-rojo">$42</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            La gran picada pechuga
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$26</div>
-                            <div class="precio-rojo">$50</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            La gran picada chorizo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$26</div>
-                            <div class="precio-rojo">$50</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            La gran picada suiza
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$27</div>
-                            <div class="precio-rojo">$52</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 services">
-                <span class="fa fa-cutlery fa-2x rojo"></span>
-                <h4>SANDWICHS</h4>
-                <span class="texto-rojo">(Todos nuestros sándwiches, su preparación llevan salsas de la casa y con acompañante papas a la francesa o aros de cebolla)</span>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            Sencillo
-                            <div class="subtexto">(Jamón, queso mozzarella)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$11</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Hawaiano
-                            <div class="subtexto">(Jamón, queso mozzarella, piña, tocineta)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Mixto
-                            <div class="subtexto">(Jamón, queso mozzarella y chorizo)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Peperoni
-                            <div class="subtexto">(Jamón, queso mozzarella y peperoni)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Pollo
-                            <div class="subtexto">(Jamón, queso mozzarella y pollo)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Salami</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Champiñones</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Salami</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Chorizo</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Tocineta</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Peperoni</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Pollo - Suiza</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            4 Carnes
-                            <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$16</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            5 Carnes
-                            <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta, pollo)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$18</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            6 Carnes
-                            <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta, pollo, salami)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$19</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Suiza
-                            <div class="subtexto">(Queso mozzarella, jamón, salchicha suiza)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Americano
-                            <div class="subtexto">(Jamón, queso mozzarella, queso chédar, tocineta, nachos)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Ranchero
-                            <div class="subtexto">(Jamón, queso mozzarella, peperoni, salami, tocineta)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Italiano
-                            <div class="subtexto">(Jamón, queso mozzarella, peperoni, salami, tocineta)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$16</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Vegetariano
-                            <div class="subtexto">(Queso mozzarella, tomates frescos, lechuga con salsa de la casa)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$11</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-6 col-sm-6 services">
-                <span class="fa fa-cutlery fa-2x rojo"></span>
-                <h4>CLUB POTATOES</h4>
-                <span class="texto-rojo">(Papas a la francesa, papas en casco, queso americano, beicon, sour crearm)</span>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Club potatoes</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$18</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Club Potatoes agrandada</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$34</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potates chorizo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$22</div>
-                            <div class="precio-rojo">$42</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes pechuga
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$22</div>
-                            <div class="precio-rojo">$42</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes suiza
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$23</div>
-                            <div class="precio-rojo">$44</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes pollo y chorizo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$26</div>
-                            <div class="precio-rojo">$50</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes pollo y suiza
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$27</div>
-                            <div class="precio-rojo">$54</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes chorizo y suiza
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$27</div>
-                            <div class="precio-rojo">$52</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Club potatoes 4 carnes
-                            <div class="subtexto">(Beicon, pollo, chorizo y suiza)</div>
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <br>
-                            <div class="precio-rojo">$36</div>
-                            <div class="precio-rojo">$70</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>POSTRES</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            Fresa con crema
-                            <div class="subtexto">(Pequeña)</div>
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$4</div>
-                            <div class="precio-rojo">$7</div>
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Frutas con crema</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$11</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Churchill</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$11</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Brownie con helado</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$7</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>PARFAIT DULCES</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            Oreo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$8</div>
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Galleta milo
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$8</div>
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Galleta chips
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$8</div>
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Brownie
-                            <div class="subtexto">(Mediana)</div>
-                            <div class="subtexto">(Grande)</div>
-                        </td>
-                        <td class="gris-oscuro" width="3%">
-                            <br>
-                            <div class="precio-rojo">$8</div>
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-4 col-sm-4 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>FRAPPUCCINOS</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Arequipe</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$7</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Chocolate</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$7</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Nutella</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Irlandes</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Charly brown</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Chips</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Mr peanut whit chocolate</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Oreo</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Cookies and cream</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$10</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>LIMONADAS</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Natural</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Cerezada</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Patilla</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Yerbabuena</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Uva</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Durazno</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Coco</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Fresa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>REFRESCANTES</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Té de la casa limón</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Té frambuesa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$5</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>CLUB SODA</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">
-                            Queso y miel
-                        </td>
-                        <td class="gris-oscuro" width="3%" valign="top">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Maracuya
-                        </td>
-                        <td class="gris-oscuro" width="3%" valign="top">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">
-                            Corozo
-                        </td>
-                        <td class="gris-oscuro" width="3%" valign="top">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
 
-                <h4>MOJITOS</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Tradicional</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Fresa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Maracuyá</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Kiwi</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$14</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>COCTELES</h4>
-                <span class="texto-rojo">(Santa Mónica son nuestras refrescantes limonadas con ron y tequila)</span>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Natural</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Cereza</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Patilla</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Yerbabuena</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Uva</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Coco</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Durazno</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Fresa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Kiwi</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$15</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>MARGARITAS</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Limón</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Fresa</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Maracuyá</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Blue margarita</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Uva</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Durazno</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Mora</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$13</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3 col-sm-3 services">
-                <span class="fa fa-beer fa-2x rojo"></span>
-                <h4>CERVEZAS</h4>
-                <table width="100%" class="text-left">
-                    <tr>
-                        <td class="gris-oscuro">Águila light</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Club colombia</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Budweiser</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Heineken</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$6</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="gris-oscuro">Corona</td>
-                        <td class="gris-oscuro" width="3%">
-                            <div class="precio-rojo">$7</div>
-                        </td>
-                    </tr>
-                </table>
+        @if($categories->count())
+
+            <div class="row">
+
+            @foreach($categories as $key => $category)
+
+                <div class="col-md-6 col-sm-6 services">
+                    <span class="fa {{ $category->icon_code }} fa-2x rojo"></span>
+                    <h4>{{ $category->name }}</h4>
+
+                    @if($category->description)
+                        <span class="texto-rojo">({{ $category->description }})</span>
+                    @endif
+
+                    @if($category->products->count())
+
+                        <table width="100%" class="text-left">
+
+                            @foreach($category->products as $product)
+
+                                <tr>
+                                    <td class="gris-oscuro">
+
+                                        {{ $product->name }}
+
+                                        @if($product->description)
+
+                                            <div class="subtexto">({{ $product->description }})</div>
+
+                                        @endif
+
+                                    </td>
+                                    <td class="gris-oscuro" width="3%">
+
+                                        @if($product->price)
+
+                                            <div class="precio-rojo">${{ number_format($product->price) }}</div>
+
+                                        @endif
+
+                                    </td>
+                                </tr>
+
+                                @if($product->small_size)
+
+                                    <tr>
+                                        <td class="gris-oscuro">
+                                            <div class="subtexto">(Pequeña)</div>
+                                        </td>
+                                        <td class="gris-oscuro" width="3%">
+                                            <div class="precio-rojo">${{ number_format($product->small_size) }}</div>
+                                        </td>
+                                    </tr>
+
+                                @endif
+
+                                @if($product->medium_size)
+
+                                    <tr>
+                                        <td class="gris-oscuro">
+                                            <div class="subtexto">(Mediana)</div>
+                                        </td>
+                                        <td class="gris-oscuro" width="3%">
+                                            <div class="precio-rojo">${{ number_format($product->medium_size) }}</div>
+                                        </td>
+                                    </tr>
+
+                                @endif
+
+                                @if($product->big_size)
+
+                                    <tr>
+                                        <td class="gris-oscuro">
+                                            <div class="subtexto">(Grande)</div>
+                                        </td>
+                                        <td class="gris-oscuro" width="3%">
+                                            <div class="precio-rojo">${{ number_format($product->big_size) }}</div>
+                                        </td>
+                                    </tr>
+
+                                @endif
+
+                            @endforeach
+
+                        </table>
+
+                    @endif
+
+                </div>
+
+            @endforeach
+
             </div>
 
-        </div>
+        @else
+            <div class="row">
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-cutlery fa-2x rojo"></span>
+                    <h4>PIQUES</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Mozzarellas fingers</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$8</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Aros de cebolla</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$7</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Porción papas a la francesa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Porción papas en casco</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$6</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Dedos de pollo</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$6</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-cutlery fa-2x rojo"></span>
+                    <h4>SANDWICHS DULCES</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                Queso y miel
+                                <div class="subtexto">(queso mozzarella)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%" valign="top">
+                                <div class="precio-rojo">$8</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Bocadillo con queso</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Nutella, fresas y queso mozzarella</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Troplical
+                                <div class="subtexto">(piña, cereza, queso y jamón)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%" valign="top">
+                                <div class="precio-rojo">$11</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-cutlery fa-2x rojo"></span>
+                    <h4>LA GRAN PICADA</h4>
+                    <span class="texto-rojo">(Papas a la francesa, papas en casco, aros de cebolla, mozzarellas fingers)</span>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                La gran picada dedos de pollo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$22</div>
+                                <div class="precio-rojo">$42</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                La gran picada pechuga
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$26</div>
+                                <div class="precio-rojo">$50</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                La gran picada chorizo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$26</div>
+                                <div class="precio-rojo">$50</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                La gran picada suiza
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$27</div>
+                                <div class="precio-rojo">$52</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 services">
+                    <span class="fa fa-cutlery fa-2x rojo"></span>
+                    <h4>SANDWICHS</h4>
+                    <span class="texto-rojo">(Todos nuestros sándwiches, su preparación llevan salsas de la casa y con acompañante papas a la francesa o aros de cebolla)</span>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                Sencillo
+                                <div class="subtexto">(Jamón, queso mozzarella)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$11</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Hawaiano
+                                <div class="subtexto">(Jamón, queso mozzarella, piña, tocineta)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Mixto
+                                <div class="subtexto">(Jamón, queso mozzarella y chorizo)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Peperoni
+                                <div class="subtexto">(Jamón, queso mozzarella y peperoni)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Pollo
+                                <div class="subtexto">(Jamón, queso mozzarella y pollo)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Salami</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Champiñones</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Salami</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Chorizo</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Tocineta</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Peperoni</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Pollo - Suiza</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                4 Carnes
+                                <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$16</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                5 Carnes
+                                <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta, pollo)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$18</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                6 Carnes
+                                <div class="subtexto">(Queso mozzarella, peperoni, chorizo, jamón, tocineta, pollo, salami)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$19</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Suiza
+                                <div class="subtexto">(Queso mozzarella, jamón, salchicha suiza)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Americano
+                                <div class="subtexto">(Jamón, queso mozzarella, queso chédar, tocineta, nachos)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Ranchero
+                                <div class="subtexto">(Jamón, queso mozzarella, peperoni, salami, tocineta)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Italiano
+                                <div class="subtexto">(Jamón, queso mozzarella, peperoni, salami, tocineta)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$16</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Vegetariano
+                                <div class="subtexto">(Queso mozzarella, tomates frescos, lechuga con salsa de la casa)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$11</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-6 services">
+                    <span class="fa fa-cutlery fa-2x rojo"></span>
+                    <h4>CLUB POTATOES</h4>
+                    <span class="texto-rojo">(Papas a la francesa, papas en casco, queso americano, beicon, sour crearm)</span>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Club potatoes</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$18</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Club Potatoes agrandada</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$34</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potates chorizo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$22</div>
+                                <div class="precio-rojo">$42</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes pechuga
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$22</div>
+                                <div class="precio-rojo">$42</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes suiza
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$23</div>
+                                <div class="precio-rojo">$44</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes pollo y chorizo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$26</div>
+                                <div class="precio-rojo">$50</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes pollo y suiza
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$27</div>
+                                <div class="precio-rojo">$54</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes chorizo y suiza
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$27</div>
+                                <div class="precio-rojo">$52</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Club potatoes 4 carnes
+                                <div class="subtexto">(Beicon, pollo, chorizo y suiza)</div>
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <br>
+                                <div class="precio-rojo">$36</div>
+                                <div class="precio-rojo">$70</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>POSTRES</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                Fresa con crema
+                                <div class="subtexto">(Pequeña)</div>
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$4</div>
+                                <div class="precio-rojo">$7</div>
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Frutas con crema</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$11</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Churchill</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$11</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Brownie con helado</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$7</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>PARFAIT DULCES</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                Oreo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$8</div>
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Galleta milo
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$8</div>
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Galleta chips
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$8</div>
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Brownie
+                                <div class="subtexto">(Mediana)</div>
+                                <div class="subtexto">(Grande)</div>
+                            </td>
+                            <td class="gris-oscuro" width="3%">
+                                <br>
+                                <div class="precio-rojo">$8</div>
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-sm-4 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>FRAPPUCCINOS</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Arequipe</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$7</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Chocolate</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$7</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Nutella</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Irlandes</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Charly brown</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Chips</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Mr peanut whit chocolate</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Oreo</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Cookies and cream</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$10</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>LIMONADAS</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Natural</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Cerezada</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Patilla</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Yerbabuena</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Uva</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Durazno</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Coco</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Fresa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>REFRESCANTES</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Té de la casa limón</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Té frambuesa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$5</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>CLUB SODA</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">
+                                Queso y miel
+                            </td>
+                            <td class="gris-oscuro" width="3%" valign="top">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Maracuya
+                            </td>
+                            <td class="gris-oscuro" width="3%" valign="top">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">
+                                Corozo
+                            </td>
+                            <td class="gris-oscuro" width="3%" valign="top">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+
+                    <h4>MOJITOS</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Tradicional</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Fresa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Maracuyá</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Kiwi</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$14</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>COCTELES</h4>
+                    <span class="texto-rojo">(Santa Mónica son nuestras refrescantes limonadas con ron y tequila)</span>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Natural</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Cereza</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Patilla</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Yerbabuena</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Uva</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Coco</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Durazno</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Fresa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Kiwi</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$15</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>MARGARITAS</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Limón</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Fresa</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Maracuyá</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Blue margarita</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Uva</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Durazno</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Mora</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$13</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3 col-sm-3 services">
+                    <span class="fa fa-beer fa-2x rojo"></span>
+                    <h4>CERVEZAS</h4>
+                    <table width="100%" class="text-left">
+                        <tr>
+                            <td class="gris-oscuro">Águila light</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Club colombia</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Budweiser</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Heineken</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$6</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gris-oscuro">Corona</td>
+                            <td class="gris-oscuro" width="3%">
+                                <div class="precio-rojo">$7</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        @endif
     </div>
 </section>
 <!-- services section -->

@@ -7,11 +7,26 @@ use App\Models\Category;
 interface CategoryInterface
 {
     /**
+     * CategoryInterface constructor.
+     * @param ProductInterface $product
+     */
+    public function __construct(ProductInterface $product);
+
+
+    /**
      * Get all
      *
      * @return object|null
      */
-    public function all(): ?object;
+    public function all(int $pagination = 5): ?object;
+
+
+    /**
+     * Get all
+     *
+     * @return object|null
+     */
+    public function allWithProducts(): ?object;
 
 
     /**
