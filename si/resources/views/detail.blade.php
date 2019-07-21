@@ -31,9 +31,7 @@
 </head>
 
 <body>
-<!--
 <audio autoplay src="{{ asset('audio.mp4') }}"></audio>
--->
 <!-- header section -->
 <section class="banner" role="banner">
     <!--header navigation -->

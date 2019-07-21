@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Repositories\Contracts\CategoryInterface;
 use Illuminate\Http\Request;
 
+/**
+ * Class HomeController
+ * @package App\Http\Controllers
+ */
 class HomeController extends Controller
 {
     protected $categoryRepository;
@@ -17,7 +21,6 @@ class HomeController extends Controller
      */
     public function __construct(CategoryInterface $categoryRepository)
     {
-        $this->middleware('auth');
         $this->categoryRepository = $categoryRepository;
     }
 
@@ -31,7 +34,9 @@ class HomeController extends Controller
         return view('si.home');
     }
 
-
+    /**
+     * @return mixed
+     */
     public function detail()
     {
         return view('detail', [

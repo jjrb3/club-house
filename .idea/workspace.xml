@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[fix]: Change update products.">
+    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[feat]: Set categories and products in home page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/si/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -128,25 +125,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="181" column="38" selection-start-line="181" selection-start-column="38" selection-end-line="181" selection-end-column="38" />
-              <folding>
-                <element signature="n#div#3;n#div#0;n#section#2;n#body#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#section#2;n#body#0;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#section#2;n#body#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="525">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#40#89#0#PHP" expanded="true" />
               </folding>
@@ -155,9 +138,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/si/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
+            <state relative-caret-position="750">
               <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
                 <element signature="e#38#62#0#PHP" expanded="true" />
@@ -182,6 +183,7 @@
       <find>mp4</find>
       <find>(queso mozzarella)</find>
       <find>Mediana</find>
+      <find>CLUB POTATOES</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;</replace>
@@ -199,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
@@ -247,9 +248,10 @@
         <option value="$PROJECT_DIR$/si/resources/views/category/product/update.blade.php" />
         <option value="$PROJECT_DIR$/si/routes/web.php" />
         <option value="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" />
-        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" />
         <option value="$PROJECT_DIR$/si/resources/views/detail.blade.php" />
+        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/si/.env" />
       </list>
     </option>
   </component>
@@ -363,64 +365,6 @@
               <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="club-house" type="462c0819:PsiDirectoryNode" />
               <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Contracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
-              <item name="club-house" type="462c0819:PsiDirectoryNode" />
-              <item name="si" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -495,7 +439,8 @@
       <workItem from="1562001621002" duration="69000" />
       <workItem from="1562017556957" duration="6531000" />
       <workItem from="1562508402459" duration="29863000" />
-      <workItem from="1562625743695" duration="5130000" />
+      <workItem from="1562625743695" duration="5307000" />
+      <workItem from="1563664452382" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: Added migrations.">
       <created>1552229897409</created>
@@ -742,17 +687,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562626831883</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="[feat]: Set categories and products in home page.">
+      <created>1562722185366</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1562722185366</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57784000" />
+    <option name="totallyTimeSpent" value="58914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -846,7 +798,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[design]: Change home route." />
     <MESSAGE value="[design]: View category." />
     <MESSAGE value="[feat]: Added category, incon, product models." />
     <MESSAGE value="[feat]: Added Icon eloquent." />
@@ -871,18 +822,10 @@
     <MESSAGE value="[fix]: Change delete by id." />
     <MESSAGE value="[fix]: Change create products." />
     <MESSAGE value="[fix]: Change update products." />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]: Change update products." />
+    <MESSAGE value="[feat]: Set categories and products in home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Set categories and products in home page." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/password_resets">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/merqueo/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
@@ -967,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -981,13 +917,6 @@
           <folding>
             <element signature="n#style#0;n#form#0;n#div#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1148,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
+        <state relative-caret-position="750">
           <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="e#38#62#0#PHP" expanded="true" />
@@ -1227,25 +1156,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        <state relative-caret-position="525">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#40#89#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/resources/views/detail.blade.php">
+    <entry file="file://$PROJECT_DIR$/si/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="181" column="38" selection-start-line="181" selection-start-column="38" selection-end-line="181" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#3;n#div#0;n#section#2;n#body#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#section#2;n#body#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#section#2;n#body#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
