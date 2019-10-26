@@ -1,13 +1,15 @@
 <?php
 
-
 namespace App\Repositories;
-
 
 use App\Models\Category;
 use App\Repositories\Contracts\CategoryInterface;
 use App\Repositories\Contracts\ProductInterface;
 
+/**
+ * Class EloquentCategoryRepository
+ * @package App\Repositories
+ */
 class EloquentCategoryRepository implements CategoryInterface
 {
     protected $productRepository;
@@ -47,7 +49,8 @@ class EloquentCategoryRepository implements CategoryInterface
 
         foreach ($categories as $key => $category) {
 
-            $categories[$key]->products = $this->productRepository->allByCategory($category->id);
+            $categories[$key]->products = $this->productRepository
+                ->allByCategoryWithoutPaginate($category->id);
         }
 
         return $categories;

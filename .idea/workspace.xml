@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[feat]: Set categories and products in home page.">
+    <list default="true" id="3bb22672-8fe0-42d3-b876-1cfde62e8f60" name="Default" comment="[feat]: Remove auth.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/si/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/resources/views/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/si/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/si/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/si/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/si/config/app.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -126,43 +129,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/si/database/seeds/UsersTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#40#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+        <entry file="file://$PROJECT_DIR$/si/app/Models/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
+        <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142519_create_categories_product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-              <folding>
-                <element signature="e#38#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142542_create_products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" column="95" selection-start-line="24" selection-start-column="12" selection-end-line="25" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -201,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -250,8 +246,9 @@
         <option value="$PROJECT_DIR$/si/app/Repositories/Contracts/CategoryInterface.php" />
         <option value="$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php" />
         <option value="$PROJECT_DIR$/si/resources/views/detail.blade.php" />
-        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/si/.env" />
+        <option value="$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/si/config/app.php" />
       </list>
     </option>
   </component>
@@ -365,14 +362,34 @@
               <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="club-house" type="462c0819:PsiDirectoryNode" />
               <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="club-house" type="462c0819:PsiDirectoryNode" />
               <item name="si" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="club-house" type="462c0819:PsiDirectoryNode" />
+              <item name="si" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="club-house" type="462c0819:PsiDirectoryNode" />
+              <item name="si" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="club-house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="club-house" type="462c0819:PsiDirectoryNode" />
+              <item name="si" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -441,6 +458,14 @@
       <workItem from="1562508402459" duration="29863000" />
       <workItem from="1562625743695" duration="5307000" />
       <workItem from="1563664452382" duration="953000" />
+      <workItem from="1563668524438" duration="44000" />
+      <workItem from="1563668651301" duration="398000" />
+      <workItem from="1563727858257" duration="7000" />
+      <workItem from="1563728579910" duration="183000" />
+      <workItem from="1569162282171" duration="1640000" />
+      <workItem from="1569165732449" duration="85000" />
+      <workItem from="1569172528288" duration="15000" />
+      <workItem from="1569172625830" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: Added migrations.">
       <created>1552229897409</created>
@@ -694,17 +719,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562722185366</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[feat]: Remove auth.">
+      <created>1563668548218</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563668548218</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58914000" />
+    <option name="totallyTimeSpent" value="61301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -717,7 +749,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49848714" weight="0.4795181" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49848714" visible="true" weight="0.26506025" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" weight="0.6385542" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -725,7 +757,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.19241774" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19241774" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
@@ -798,7 +830,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[design]: View category." />
     <MESSAGE value="[feat]: Added category, incon, product models." />
     <MESSAGE value="[feat]: Added Icon eloquent." />
     <MESSAGE value="[feat]: Create category." />
@@ -823,47 +854,16 @@
     <MESSAGE value="[fix]: Change create products." />
     <MESSAGE value="[fix]: Change update products." />
     <MESSAGE value="[feat]: Set categories and products in home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Set categories and products in home page." />
+    <MESSAGE value="[feat]: Remove auth." />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Remove auth." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/merqueo/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layoutss/app.blade.php" />
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeders.php" />
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b6b1ce3a-0cd8-48ba-a588-319082b5b51c">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/users" />
     <entry file="file://$PROJECT_DIR$/si/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -945,15 +945,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/icons">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="3c332371-642c-4919-a5ca-908d796b141d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/icons" />
     <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentIconRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -988,13 +980,6 @@
           <folding>
             <element signature="e#23#63#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/app/Models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1078,22 +1063,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/categories_product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="acde1a52-e12f-43e2-9260-efbf91c7825a">
-          <filtering />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="acde1a52-e12f-43e2-9260-efbf91c7825a">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/categories_product" />
+    <entry file="das://2ff6ef3d-2d54-4c26-9ebb-334ac4ed8cef/schema/club_house/table/products" />
     <entry file="file://$PROJECT_DIR$/si/resources/views/category/product/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -1146,16 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding>
-            <element signature="e#38#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/si/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1170,10 +1131,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/si/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="495">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#40#89#0#PHP" expanded="true" />
           </folding>
@@ -1183,14 +1151,52 @@
     <entry file="file://$PROJECT_DIR$/si/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/si/app/Repositories/EloquentCategoryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="750">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="228" column="54" selection-start-line="228" selection-start-column="54" selection-end-line="228" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142519_create_categories_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/database/migrations/2019_03_10_142542_create_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="95" selection-start-line="24" selection-start-column="12" selection-end-line="25" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/si/app/Models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -42,6 +42,23 @@ class EloquentProductRepository implements ProductInterface
     }
 
     /**
+     * Get all product
+     *
+     * @return object|null
+     */
+    public function allByCategoryWithoutPaginate(int $categoryId): ?object
+    {
+        try {
+            return Product::where('category_product_id', $categoryId)
+                ->orderBy('name')
+                ->get();
+        }
+        catch (\Exception $e) {
+            return null;
+        }
+    }
+
+    /**
      * Get by id
      *
      * @param int $id
